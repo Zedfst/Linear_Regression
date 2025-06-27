@@ -8,5 +8,5 @@ De plus, il présente comment gérer et déployer l’algorithme à des fins com
 git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en local
 #Créer un environnement virtuel python
 python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
-source ven nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivte pour le désactiver.
+source nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivte pour le désactiver.
 ```
