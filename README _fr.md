@@ -9,4 +9,5 @@ git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en loc
 #Créer un environnement virtuel python
 python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
 source nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivte pour le désactiver.
+python3 -m pip install -r Requirements.txt
 ```
