@@ -1,9 +1,0 @@
-digest: 9abc9ea2
-name: dataset
-profile: '{"num_rows": 400, "num_elements": 1200}'
-schema: '{"mlflow_colspec": [{"type": "double", "name": "pieds_carres", "required":
-  true}, {"type": "long", "name": "nombre_chambres", "required": true}, {"type": "long",
-  "name": "nombre_etages", "required": true}]}'
-source: '{"tags": {"mlflow.user": "zed", "mlflow.source.name": "/home/zed/Documents/Presentations/Linear_Regression/venv/lib/python3.10/site-packages/ipykernel_launcher.py",
-  "mlflow.source.type": "LOCAL"}}'
-source_type: code
