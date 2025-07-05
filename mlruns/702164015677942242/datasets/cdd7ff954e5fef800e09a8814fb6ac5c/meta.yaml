@@ -1,8 +1,0 @@
-digest: 1826de42
-name: dataset
-profile: '{"features_shape": [100, 3], "features_size": 300, "features_nbytes": 2400}'
-schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
-  {\"dtype\": \"float64\", \"shape\": [-1, 3]}}]", "targets": null}}'
-source: '{"tags": {"mlflow.user": "zed", "mlflow.source.name": "/home/zed/Documents/Presentations/Linear_Regression/venv/lib/python3.10/site-packages/ipykernel_launcher.py",
-  "mlflow.source.type": "LOCAL"}}'
-source_type: code
