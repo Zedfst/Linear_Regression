@@ -3,6 +3,11 @@
 Cette formation présente un modèle (algorithme) de machine learning, la régression linéaire. Elle explore les aspects théoriques de modèle et propose une étude de cas pratique.
 De plus, elle présente comment gérer et déployer le modèle a des finsprofessionnelles, commerciales ou sociales.
 
+<p align="center">
+  <a href="README.md">Anglais</a>
+  <a href="READMEfr.md">Français</a>
+</p>
+
 # Configuration de l'environnement
 
 ## Ubuntu
