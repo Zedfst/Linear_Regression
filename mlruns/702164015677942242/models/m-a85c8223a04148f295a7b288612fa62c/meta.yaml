@@ -1,0 +1,10 @@
+artifact_location: file:///home/zed/Documents/Presentations/Linear_Regression/mlruns/702164015677942242/models/m-a85c8223a04148f295a7b288612fa62c/artifacts
+creation_timestamp: 1751723714364
+experiment_id: '702164015677942242'
+last_updated_timestamp: 1751723715711
+model_id: m-a85c8223a04148f295a7b288612fa62c
+model_type: null
+name: model
+source_run_id: 95575f460134480988f54f68458b3804
+status: 2
+status_message: null

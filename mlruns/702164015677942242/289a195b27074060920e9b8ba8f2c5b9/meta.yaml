@@ -1,0 +1,14 @@
+artifact_uri: file:///home/zed/Documents/Presentations/Linear_Regression/mlruns/702164015677942242/289a195b27074060920e9b8ba8f2c5b9/artifacts
+end_time: 1751724774789
+entry_point_name: ''
+experiment_id: '702164015677942242'
+lifecycle_stage: active
+run_id: 289a195b27074060920e9b8ba8f2c5b9
+run_name: shivering-bass-766
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751724773319
+status: 3
+tags: []
+user_id: zed

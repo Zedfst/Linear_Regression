@@ -1,0 +1,14 @@
+artifact_uri: file:///home/zed/Documents/Presentations/Linear_Regression/mlruns/0/7f7d6d67f1c647d5bb703b42c6e2ecae/artifacts
+end_time: 1751723000717
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7f7d6d67f1c647d5bb703b42c6e2ecae
+run_name: thundering-kite-709
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751722998894
+status: 3
+tags: []
+user_id: zed

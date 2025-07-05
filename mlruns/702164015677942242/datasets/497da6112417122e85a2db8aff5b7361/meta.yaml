@@ -1,0 +1,10 @@
+digest: 69e03b9f
+name: dataset
+profile: '{"features_shape": [400, 3], "features_size": 1200, "features_nbytes": 9600,
+  "targets_shape": [400, 1], "targets_size": 400, "targets_nbytes": 3200}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 3]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 1]}}]"}}'
+source: '{"tags": {"mlflow.user": "zed", "mlflow.source.name": "/home/zed/Documents/Presentations/Linear_Regression/venv/lib/python3.10/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

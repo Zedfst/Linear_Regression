@@ -1,0 +1,14 @@
+artifact_uri: file:///home/zed/Documents/Presentations/Linear_Regression/mlruns/702164015677942242/cc87de80c2054dbc9acad5c89eea5b58/artifacts
+end_time: 1751724421372
+entry_point_name: ''
+experiment_id: '702164015677942242'
+lifecycle_stage: active
+run_id: cc87de80c2054dbc9acad5c89eea5b58
+run_name: useful-ant-855
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751724419543
+status: 3
+tags: []
+user_id: zed
