@@ -25,3 +25,5 @@ Ouvrez un autre termial pour lancer MLflow
 ```bash
 mlflow server --host 127.0.0.1 --port 8080#ctrl+c pour le stopper
 ```
+
+## Windows
