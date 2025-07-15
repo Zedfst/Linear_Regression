@@ -2,3 +2,4 @@ src/data.csv
 venv/
 mlruns/
 slotmanagement.ipynb
+weights/
