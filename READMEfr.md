@@ -27,3 +27,7 @@ mlflow server --host 127.0.0.1 --port 8080#ctrl+c pour le stopper
 ```
 
 ## Windows
+
+# Ressources
+
+[Pdf](src/Regression_Lineaire.pdf)
