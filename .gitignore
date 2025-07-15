@@ -3,3 +3,4 @@ venv/
 mlruns/
 slotmanagement.ipynb
 weights/
+__pycache__
