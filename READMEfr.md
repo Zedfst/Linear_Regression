@@ -16,17 +16,27 @@ De plus, elle présente comment gérer et déployer le modèle a des finsprofess
 git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en local
 #Créer un environnement virtuel python
 python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
-source nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivte pour le désactiver.
+source nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivate pour le désactiver
 python3 -m pip install -r Requirements.txt #Installer les bibliothèques Python présentes dans le fichier Requirements.txt
 ```
 
-Ouvrez un autre termial pour lancer MLflow
+## Windows
+
+```bash
+git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en local
+#Créer un environnement virtuel python
+python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
+Get-ExecutionPolicy # Vérifier la politique d'exécution des scripts PowerShell. Si la valeur retournée est Restricted, entrez la commande ci-dessous
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+nom_environement_virtuel\Scripts\Activate # Pour activer l'environnement virtuel. Tapez deactivate pour le désactiver
+python3 -m pip install -r Requirements.txt # Installer les bibliothèques Python présentes dans le fichier Requirements.txt
+```
+
+Ouvrez un autre termial pour lancer MLflow (Ubuntu/Windows)
 
 ```bash
 mlflow server --host 127.0.0.1 --port 8080#ctrl+c pour le stopper
 ```
-
-## Windows
 
 # Ressources
 
