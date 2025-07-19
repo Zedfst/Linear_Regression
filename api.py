@@ -3,6 +3,10 @@ import mlflow.sklearn
 import numpy as np
 from dataclasses import dataclass
 import sys
+from sklearn.preprocessing import StandardScaler
+import joblib
+
+scaler = joblib.load("src/scaler.pkl")
 
 
 @dataclass
@@ -11,6 +15,9 @@ class Observations():
     nombre_chambres: float
     nombre_etages: float
     distance_centre_ville: float
+
+    def compact(self,):
+        return np.array([self.pieds_carres,self.nombre_chambres,self.nombre_etages,self.distance_centre_ville]).reshape(-1,4)
 
 
     
@@ -23,7 +30,7 @@ class Observations():
 api=FastAPI()
 
 mlflow.set_experiment('rent_prediction')
-lr_model = mlflow.sklearn.load_model("runs:/0bdf16ae8bb5417184a6da6956390dfb/model")
+lr_model = mlflow.sklearn.load_model("models:/lr1@challenger")
 
 @api.get('/model-v0')
 def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distance_centre_ville: float)->float:
@@ -34,6 +41,7 @@ def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distanc
 
         Version: 0.0.0
     """
+    print('______________________')
     obs=Observations(
         pieds_carres,
         nombre_chambres,
@@ -41,7 +49,8 @@ def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distanc
         distance_centre_ville
 
     )
-    pred=np.round(lr_model.predict([[obs.pieds_carres,obs.nombre_chambres,obs.nombre_etages,obs.distance_centre_ville]]),2)[0][0]
+    features=scaler.transform(obs.compact())
+    pred=np.round(lr_model.predict(features),2)[0][0]
     #pred*=100000 <=> pred=pred*100000
     pred*=10000
     return pred
