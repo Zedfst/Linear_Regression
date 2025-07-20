@@ -16,7 +16,7 @@ git clone https://github.com/Zedfst/Linear_Regression #Clone the repository loca
 #Create virtual environment
 python3 -m venv virtual_environment_name # exemple: python -m venv myvenv
 source virtual_environment_name/bin/activate # Activate the virtaul environment. Enter deactivate to disable it.
-python3 -m pip install -r Requirements.txt #Install the Python libraries present in the Requirements.txt file.
+python3 -m pip install -r requirements.txt #Install the Python libraries present in the Requirements.txt file.
 ```
 
 Open another terminal to launch MLflow
