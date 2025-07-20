@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import sys
 from sklearn.preprocessing import StandardScaler
 import joblib
+import mlflow
 
 scaler = joblib.load("src/scaler.pkl")
 
@@ -15,9 +16,10 @@ class Observations():
     nombre_chambres: float
     nombre_etages: float
     distance_centre_ville: float
+    annee_construction:float
 
     def compact(self,):
-        return np.array([self.pieds_carres,self.nombre_chambres,self.nombre_etages,self.distance_centre_ville]).reshape(-1,4)
+        return np.array([self.pieds_carres,self.nombre_chambres,self.nombre_etages,self.distance_centre_ville,self.annee_construction]).reshape(-1,5)
 
 
     
@@ -29,11 +31,11 @@ class Observations():
 
 api=FastAPI()
 
-mlflow.set_experiment('rent_prediction')
-lr_model = mlflow.sklearn.load_model("models:/lr1@challenger")
+mlflow.set_experiment('prediction_loyer')
+lr_model = mlflow.sklearn.load_model("models:/model_lr@actual")
 
 @api.get('/model-v0')
-def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distance_centre_ville: float)->float:
+def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distance_centre_ville: float,annee_construction: float)->float:
     """
         Model: Régression Linéaire.
 
@@ -46,7 +48,8 @@ def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distanc
         pieds_carres,
         nombre_chambres,
         nombre_etages,
-        distance_centre_ville
+        distance_centre_ville,
+        annee_construction,
 
     )
     features=scaler.transform(obs.compact())
