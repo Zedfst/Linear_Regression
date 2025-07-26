@@ -14,6 +14,8 @@ De plus, elle présente comment gérer et déployer le modèle a des finsprofess
 
 ```bash
 git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en local
+cd Linear_Regression
+code . #Si vous utilisez VS code
 #Créer un environnement virtuel python
 python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
 source nom_environement_virtuel/bin/activate # Pour activer l'environnement virtuel. Tapez deactivate pour le désactiver
@@ -25,7 +27,9 @@ python3 -m pip install -r requirements.txt #Installer les bibliothèques Python 
 ```bash
 git clone https://github.com/Zedfst/Linear_Regression #Impoter le project en local
 #Créer un environnement virtuel python
-python3 -m venv nom_environement_virtuel # exemple: python -m venv venv
+cd Linear_Regression
+code . #Si vous utilisez VS code
+python -m venv nom_environement_virtuel # exemple: python -m venv venv
 Get-ExecutionPolicy # Vérifier la politique d'exécution des scripts PowerShell. Si la valeur retournée est Restricted, entrez la commande ci-dessous
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 nom_environement_virtuel\Scripts\Activate # Pour activer l'environnement virtuel. Tapez deactivate pour le désactiver
