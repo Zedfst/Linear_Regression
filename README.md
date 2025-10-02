@@ -24,7 +24,7 @@ python3 -m pip install -r requirements.txt #Install the Python libraries present
 ```bash
 git clone https://github.com/Zedfst/Linear_Regression #Import the project locally
 cd Linear_Regression
-code . #If you used VS code
+code . #If you use VS code
 #Create python virtual environment
 python -m venv nom_environement_virtuel # example: python -m venv venv
 Get-ExecutionPolicy # Check the PowerShell script execution policy. If the returned value is Restricted, enter the command below
