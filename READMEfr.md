@@ -46,4 +46,4 @@ mlflow server --host 127.0.0.1 --port 8080#ctrl+c pour le stopper
 
 [Pdf](src/Regression_Lineaire.pdf)
 
-[Notebook](rent_prediction.ipynb)
+[Notebook](prediction_loyer.ipynb)
