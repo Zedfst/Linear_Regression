@@ -1,6 +1,6 @@
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue)
 
-# Linear_Regression
+# Linear Regression
 
 This course introduces the linear regression algorithm by exploring the theoretical aspect and provides a practical example in python as well as the management and deployment of the model using mlflow and FastAPI.
 
