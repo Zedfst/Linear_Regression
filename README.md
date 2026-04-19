@@ -69,7 +69,7 @@ FastAPI is a web framwork for building APIs with Python. We use it to obtain pre
 Documentation: https://fastapi.tiangolo.com/
 
 ```bash
-uvicorn api:api --host 127.0.0.1 --port 8000 --reload
+uvicorn api:api --host 127.0.0.1 --port 8000 --reload #ctrl+c to stop it.
 #Access your browser and enter http://localhost:8000/docs
 
 ```
