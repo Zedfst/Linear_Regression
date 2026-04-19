@@ -25,7 +25,7 @@ source virtual_environment_name/bin/activate # Activate the virtaul environment.
 python3 -m pip install -r requirements.txt #Install the Python libraries present in the Requirements.txt file
 ```
 
-## Windows
+#### Windows
 
 ```bash
 git clone https://github.com/Zedfst/Linear_Regression #Import the project locally
@@ -65,7 +65,7 @@ python3 rent_prediction.py -training_size 0.2  -n_jobs 5
 
 FastAPI is a web framwork for building APIs with Python. We use it to obtain predictions from our model via the HTTP protocol.
 
-Documentation:https://fastapi.tiangolo.com/
+Documentation: https://fastapi.tiangolo.com/
 
 Open another terminal to launch FastAPI.
 
