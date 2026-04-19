@@ -1,4 +1,5 @@
 ![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)
 
 # Linear Regression
 
