@@ -1,3 +1,6 @@
+![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?logo=https://raw.githubusercontent.com/Zedfst/Linear_Regression/main/src/topsciencelogo.png)
+
 # Linear_Regression
 
 This course introduces the linear regression algorithm by exploring the theoretical aspect and provides a practical example in python as well as the management and deployment of the model using mlflow and FastAPI.
@@ -33,10 +36,31 @@ nom_environement_virtuel\Scripts\Activate # To activate the virtual environment.
 python -m pip install -r requirements.txt # Install the Python libraries listed in the Requirements.txt file
 ```
 
-Open another terminal to launch MLflow
+# Experiment Tracking: MLflow
+
+MLflow is used to log our models and their artefacts for further evaluation, comparison, and deployment. All operations can be performed via an API or a web user interface.
+
+Documentation: https://mlflow.org/docs/latest/ml/
+
+Open another terminal to launch MLflow.
 
 ```bash
 mlflow server --host 127.0.0.1 --port 8080#ctrl+c to stop it.
+#Access your browser and enter http://localhost:8080
+
+```
+
+# API: FastAPI
+
+FastAPI is a web framwork for building APIs with Python. We use it to obtain predictions from our model via the HTTP protocol.
+
+Documentation:
+
+Open another terminal to launch FastAPI.
+
+```bash
+uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+#Access your browser and enter http://localhost:8080
 
 ```
 
