@@ -46,7 +46,7 @@ MLflow is used to log our models and their artefacts for further evaluation, com
 
 Documentation: https://mlflow.org/docs/latest/ml/
 
-Open another terminal to launch MLflow.
+Open a new terminal at the project root to launch MLflow.
 
 ```bash
 mlflow server --host 127.0.0.1 --port 8080 #ctrl+c to stop it.
@@ -56,7 +56,7 @@ mlflow server --host 127.0.0.1 --port 8080 #ctrl+c to stop it.
 
 ### 🤖 3. Model training
 
-Open another terminal to start training the model.
+Open a new terminal at the project root and run the following command to begin training:
 
 ```bash
 python3 rent_prediction.py -training_size 0.2  -n_jobs 5
@@ -69,7 +69,7 @@ FastAPI is a web framwork for building APIs with Python. We use it to obtain pre
 Documentation: https://fastapi.tiangolo.com/
 
 ```bash
-uvicorn main:api --host 127.0.0.1 --port 8000 --reload
+uvicorn api:api --host 127.0.0.1 --port 8000 --reload
 #Access your browser and enter http://localhost:8000/docs
 
 ```
