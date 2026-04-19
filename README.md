@@ -49,7 +49,7 @@ Documentation: https://mlflow.org/docs/latest/ml/
 Open another terminal to launch MLflow.
 
 ```bash
-mlflow server --host 127.0.0.1 --port 8080#ctrl+c to stop it.
+mlflow server --host 127.0.0.1 --port 8080 #ctrl+c to stop it.
 #Access your browser and enter http://localhost:8080
 
 ```
@@ -67,8 +67,6 @@ python3 rent_prediction.py -training_size 0.2  -n_jobs 5
 FastAPI is a web framwork for building APIs with Python. We use it to obtain predictions from our model via the HTTP protocol.
 
 Documentation: https://fastapi.tiangolo.com/
-
-Open another terminal to launch FastAPI.
 
 ```bash
 uvicorn main:api --host 127.0.0.1 --port 8000 --reload
