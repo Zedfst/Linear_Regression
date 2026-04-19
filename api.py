@@ -56,4 +56,4 @@ def index(pieds_carres: float, nombre_chambres: int, nombre_etages: int, distanc
     pred=np.round(lr_model.predict(features),2)[0][0]
     #pred*=100000 <=> pred=pred*100000
     pred*=10000
-    return pred
+    return np.maximum(pred, 0)
