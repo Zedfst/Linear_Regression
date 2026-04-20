@@ -33,10 +33,10 @@ git clone https://github.com/Zedfst/Linear_Regression #Import the project locall
 cd Linear_Regression
 code . #If you use VS code
 #Create python virtual environment
-python -m venv nom_environement_virtuel # example: python -m venv venv
+python -m venv virtual_environment_name # example: python -m venv venv
 Get-ExecutionPolicy # Check the PowerShell script execution policy. If the returned value is Restricted, enter the command below
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-nom_environement_virtuel\Scripts\Activate # To activate the virtual environment. Type deactivate to deactivate it
+virtual_environment_name\Scripts\Activate # To activate the virtual environment. Type deactivate to deactivate it
 python -m pip install -r requirements.txt # Install the Python libraries listed in the Requirements.txt file
 ```
 
