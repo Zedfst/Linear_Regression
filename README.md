@@ -59,8 +59,10 @@ mlflow server --host 127.0.0.1 --port 8080 #ctrl+c to stop it.
 Open a new terminal at the project root and run the following command to begin training:
 
 ```bash
-python3 rent_prediction.py -training_size 0.2  -n_jobs 5
+python3 rent_prediction.py -testing_size 0.2
 ```
+
+Refer to the documentation for a deeper understanding of the model: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 
 ### 🌐 4. Model deployement with FastAPI
 

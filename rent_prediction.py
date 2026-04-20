@@ -16,15 +16,7 @@ parser=argparse.ArgumentParser()
 
 
 #==============================================cli parameters=========================
-parser.add_argument("-training_size","--training_size",type=float,default=0.2)
-parser.add_argument("-n_jobs","--n_jobs",type=str,default='normal')
-# parser.add_argument("-dimembs","--dimension_embeddings",type=int)
-# parser.add_argument("-batchsize","--batch_size",type=int)
-# parser.add_argument("-uf1","--units_fnn1",type=int)
-# parser.add_argument("-drp1","--dropout1",type=float,default=0.5)
-# parser.add_argument("-drp2","--dropout2",type=float,default=0.5)
-# parser.add_argument("-lindim","--lin_dim",type=int,default=5)
-# parser.add_argument("-icdv","--icd_version",type=int,required=True,default=10)
+parser.add_argument("-testing_size","--testing_size",help="Percentage of data used for testing",type=float,default=0.2)
 args=parser.parse_args()
 #=================================================Data loading===================
 
@@ -54,7 +46,7 @@ joblib.dump(scaler, 'src/scaler.pkl')
 
 #2% of the 100 samples are used for testing.
 #By default the train_test_split function, splits the data randomly. random_state parameter allows reproduicing the data splitting scenario.
-X_train,X_test,y_train,y_test=train_test_split(X_stand,y,test_size=args.training_size,random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X_stand,y,test_size=args.testing_size,random_state=0)
 X_train=scaler.fit_transform(X_train)#Standardise training data (only features).
 
 #MLflow settings
@@ -64,7 +56,7 @@ mlflow.set_experiment('rent_prediction')
 mlflow.start_run(run_name='my_model')
 
 # mlflow.sklearn.autolog()
-lr=LinearRegression(n_jobs=3)#Model initialization
+lr=LinearRegression()#Model initialization
 lr.fit(X_train,y_train)#Training
 
 #Standardise test data
