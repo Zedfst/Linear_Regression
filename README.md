@@ -36,7 +36,7 @@ code . #If you use VS code
 python -m venv virtual_environment_name # example: python -m venv venv
 Get-ExecutionPolicy # Check the PowerShell script execution policy. If the returned value is Restricted, enter the command below
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-virtual_environment_name\Scripts\Activate # To activate the virtual environment. Type deactivate to deactivate it
+virtual_environment_name\Scripts\Activate # To activate the virtual environment. Enter deactivate to deactivate it
 python -m pip install -r requirements.txt # Install the Python libraries listed in the Requirements.txt file
 ```
 
